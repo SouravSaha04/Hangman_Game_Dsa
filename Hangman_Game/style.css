@@ -1,0 +1,177 @@
+img {
+    max-width:30%;
+    height:40%;
+}
+
+.hangman {
+    height:50%;
+    width:50%;
+    padding-left:25%;  
+}
+img {
+    border:2px solid black;
+    border-radius: 10px;
+}
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(75, 252, 84);
+}
+
+.container {
+    text-align: center; 
+    margin-top: 10px;
+    width:100%;
+    height:100%
+}
+.game-box {
+    padding-top: 10px;
+}
+
+.incorrect{
+    color: red;
+}
+
+.row {
+    margin: 10px 0 0 0;
+}
+button {
+    color:black;
+    width:40px;
+    height:35px;
+    background:rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px #201f1f,-5px -5px 10px #FFF;
+    font-size:20px;
+    font-weight: 600;
+    margin-left:20px;
+    outline:none;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 20%;
+}
+#backspace {
+    color:black;
+    width:120px;
+    height:35px;
+    background:rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px #201f1f,-5px -5px 10px #FFF;
+    font-size:20px;
+    font-weight: 600;
+    margin-left:20px;
+    outline:none;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius:8%;
+}
+#backspace:hover 
+{
+    color:white;
+    background:rgb(129, 23, 23);
+    box-shadow:5px 5px 10px #FFF;
+}
+#Enter {
+    color:black;
+    width:80px;
+    height:35px;
+    background:rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px #201f1f,-5px -5px 10px #FFF;
+    font-size:20px;
+    font-weight: 600;
+    margin-left:20px;
+    outline:none;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius:8%;
+}
+#Enter:hover 
+{
+    color:white;
+    background:rgb(129, 23, 23);
+    box-shadow:5px 5px 10px #FFF;
+}
+button:hover {
+    color:white;
+    background:rgb(129, 23, 23);
+    box-shadow:5px 5px 10px #FFF;
+}
+input {
+    width:15%;
+    height:30px;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius:2%;
+    text-transform: lowercase;
+    margin-top:10px;
+}
+
+@media (max-width:500px)
+{
+    button {
+        width:25px;
+        height:20px;
+        font-size:10px;
+        text-align: center;
+    }
+    .row {
+        width:10%;
+        display:contents;
+        
+    }
+    .container {
+        padding-top:20px;
+    }
+    .Question-box {
+        size:1rem;
+    }
+    .word-display .letter{
+        width:20px;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        border-bottom: 3px solid black;
+    }
+
+    .hangman {
+        height:80%;
+        width:100%; 
+        padding-left:1%;
+    }
+    input {
+        width:40%;
+        height:30px;
+        font-weight: 700;
+        border: 2px solid black;
+        border-radius:2%;
+        text-transform:lowercase;
+        margin-top: 5px;
+    }
+    #backspace {
+        color:black;
+        width:80px;
+        height:25px;
+        background:rgb(255, 255, 255);
+        box-shadow: 5px 5px 10px #201f1f,-5px -5px 10px #FFF;
+        font-size:11px;
+        font-weight: 800;
+        margin-left:20px;
+        outline:none;
+        font-family:Arial, Helvetica, sans-serif;
+        border-radius:8%;
+        margin-top:10px;
+    }
+    #Enter {
+        color:black;
+        width:50px;
+        height:25px;
+        background:rgb(255, 255, 255);
+        box-shadow: 5px 5px 10px #201f1f,-5px -5px 10px #FFF;
+        font-size:11px;
+        font-weight: 800;
+        margin-left:20px;
+        outline:none;
+        font-family:Arial, Helvetica, sans-serif;
+        border-radius:8%;
+    }
+}
